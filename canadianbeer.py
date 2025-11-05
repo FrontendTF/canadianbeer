@@ -3,11 +3,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import sklearn
-import statsmodels
-import ISLP
-
-# Markus
 
 df = pd.read_csv("canadian_beers.csv")
 
@@ -120,7 +115,7 @@ plt.figure()
 plt.pie(df["isAmericanStyle"].value_counts(), autopct="%1.0f%%", colors = ["lightblue", "grey"])
 plt.title("Verteilung amerikanischer Biere mit nicht amerikanischen Bieren")
 plt.legend(title = "Bierart", labels = ["american", "not american"])
-plt.show()
+# plt.show()
 plt.close()
 
 # Frage 6
@@ -151,7 +146,7 @@ plt.title("Score von Ale- und Stout-Bieren")
 plt.xlabel("Biertyp")
 plt.ylabel("Score")
 plt.grid(True, axis="y")
-plt.show()
+# plt.show()
 plt.close()
 
 plt.figure()
@@ -160,7 +155,7 @@ plt.title("Alkoholgehalt von Ale- und Stout-Bieren")
 plt.xlabel("Biertyp")
 plt.ylabel("Alkohol in %")
 plt.grid(True, axis="y")
-plt.show()
+# plt.show()
 plt.close()
 
 
@@ -183,7 +178,7 @@ plt.xlabel("Score")
 plt.ylabel("Rank")
 plt.grid(True)
 plt.gca().invert_yaxis()  # Rank 1 oben weil besser
-plt.show()
+# plt.show()
 plt.close()
 
 plt.figure()
@@ -193,7 +188,7 @@ plt.xlabel("Alkohol in % (abv)")
 plt.ylabel("Rank")
 plt.grid(True)
 plt.gca().invert_yaxis()
-plt.show()
+# plt.show()
 plt.close()
 
 
@@ -213,7 +208,7 @@ plt.title("Score in Abhängigkeit vom Alkoholgehalt")
 plt.xlabel("Alkohol in % (abv)")
 plt.ylabel("Score")
 plt.grid(True)
-plt.show()
+# plt.show()
 plt.close()
 
 # Score vs Anzahl Ratings
@@ -223,7 +218,7 @@ plt.title("Score in Abhängigkeit von der Anzahl Ratings")
 plt.xlabel("Anzahl Ratings")
 plt.ylabel("Score")
 plt.grid(True)
-plt.show()
+# plt.show()
 plt.close()
 
 # Score nach Bierstil (Top 5 häufigste Styles)
@@ -238,5 +233,5 @@ plt.ylabel("Score")
 plt.xticks(rotation=45)
 plt.grid(True, axis="y")
 plt.tight_layout()
-plt.show()
+# plt.show()
 plt.close() 
