@@ -123,7 +123,120 @@ plt.legend(title = "Bierart", labels = ["american", "not american"])
 plt.show()
 plt.close()
 
-# Lukas
+# Frage 6
+print("Frage 6):")
+print("---")
+
+# Neue Variable: Ale / Stout / Other
+df["beerType"] = np.where(
+    df["style"].str.contains("Stout", case=False),
+    "Stout",
+    np.where(df["style"].str.contains("Ale", case=False), "Ale", "Other"),
+)
+
+ale_stout = df[df["beerType"].isin(["Ale", "Stout"])]
+
+print("Anzahl Ale- und Stout-Biere:")
+print(ale_stout["beerType"].value_counts())
+print()
+
+print("Mittelwerte von Score, Alkoholgehalt, Rank und Ratings nach Biertyp:")
+print(ale_stout.groupby("beerType")[["score", "abv", "rank", "ratings"]].mean().round(2))
+print("---")
+
+# Plots: Score- und Alkoholvergleich Ale vs Stout
+plt.figure()
+sns.boxplot(data=ale_stout, x="beerType", y="score")
+plt.title("Score von Ale- und Stout-Bieren")
+plt.xlabel("Biertyp")
+plt.ylabel("Score")
+plt.grid(True, axis="y")
+plt.show()
+plt.close()
+
+plt.figure()
+sns.boxplot(data=ale_stout, x="beerType", y="abv")
+plt.title("Alkoholgehalt von Ale- und Stout-Bieren")
+plt.xlabel("Biertyp")
+plt.ylabel("Alkohol in %")
+plt.grid(True, axis="y")
+plt.show()
+plt.close()
 
 
-# Thomas
+# Frage 7
+print("Frage 7):")
+print("---")
+
+corr_rank_score = df["rank"].corr(df["score"])
+corr_rank_abv = df["rank"].corr(df["abv"])
+
+print(f"Korrelationskoeffizient zwischen Rank und Score: {corr_rank_score:.2f}")
+print(f"Korrelationskoeffizient zwischen Rank und Alkoholgehalt (abv): {corr_rank_abv:.2f}")
+print("---")
+
+# Scatterplots: Rank vs Score und Rank vs Alkoholgehalt
+plt.figure()
+sns.scatterplot(data=df, x="score", y="rank")
+plt.title("Ranking in Abhängigkeit vom Score")
+plt.xlabel("Score")
+plt.ylabel("Rank")
+plt.grid(True)
+plt.gca().invert_yaxis()  # Rank 1 oben weil besser
+plt.show()
+plt.close()
+
+plt.figure()
+sns.scatterplot(data=df, x="abv", y="rank")
+plt.title("Ranking in Abhängigkeit von Alkoholgehalt")
+plt.xlabel("Alkohol in % (abv)")
+plt.ylabel("Rank")
+plt.grid(True)
+plt.gca().invert_yaxis()
+plt.show()
+plt.close()
+
+
+# Frage 8
+print("Frage 8):")
+print("---")
+
+numeric_cols = ["score", "abv", "ratings", "rank"]
+print("Korrelationsmatrix der numerischen Variablen:")
+print(df[numeric_cols].corr().round(2))
+print("---")
+
+# Score vs Alkoholgehalt
+plt.figure()
+sns.scatterplot(data=df, x="abv", y="score")
+plt.title("Score in Abhängigkeit vom Alkoholgehalt")
+plt.xlabel("Alkohol in % (abv)")
+plt.ylabel("Score")
+plt.grid(True)
+plt.show()
+plt.close()
+
+# Score vs Anzahl Ratings
+plt.figure()
+sns.scatterplot(data=df, x="ratings", y="score")
+plt.title("Score in Abhängigkeit von der Anzahl Ratings")
+plt.xlabel("Anzahl Ratings")
+plt.ylabel("Score")
+plt.grid(True)
+plt.show()
+plt.close()
+
+# Score nach Bierstil (Top 5 häufigste Styles)
+top_styles = df["style"].value_counts().head(5).index
+df_top_styles = df[df["style"].isin(top_styles)]
+
+plt.figure()
+sns.boxplot(data=df_top_styles, x="style", y="score")
+plt.title("Score nach Bierstil (Top 5 häufigste Stile)")
+plt.xlabel("Style")
+plt.ylabel("Score")
+plt.xticks(rotation=45)
+plt.grid(True, axis="y")
+plt.tight_layout()
+plt.show()
+plt.close() 

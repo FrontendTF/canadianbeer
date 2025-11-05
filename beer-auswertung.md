@@ -1,9 +1,7 @@
-# Auswertung - canadian_beers.csv 
+# Auswertung - canadian_beers.csv
 
-# 1) & 2)
-##  Aus welchen Beobachtungen setzen sich die Daten zusammen? Beschreiben Sie diese kurz und überlegen Sie sich, welches Skalenniveau die einzelnen Beobachtungen haben. & Wie setzen sich die einzelnen Beobachtungen zusammen? Verwenden Sie Methoden für univariate Datensätze sinnvoll.
-
-
+# 1 & 2)
+## Aus welchen Beobachtungen setzen sich die Daten zusammen? Beschreiben Sie diese kurz und überlegen Sie sich, welches Skalenniveau die einzelnen Beobachtungen haben. & Wie setzen sich die einzelnen Beobachtungen zusammen? Verwenden Sie Methoden für univariate Datensätze sinnvoll.
 
 | Variable | Skalenniveau | Methode                             | Beobachtung                                             |
 | -------- | ------------ | ----------------------------------- | ------------------------------------------------------- |
@@ -64,8 +62,19 @@ Die Auswertung zeigt das "american style"-Biere nicht unbedingt besser sind als 
 # 6)
 ## Untersuchen Sie die Unterschiede zwischen ‘Ale’ und ‘Stout’ Bieren.
 
+Zur Untersuchung der Unterschiede zwischen 'Ale' 'Stoudt' erstellen wir aus der Variablen "style" eine Variable beeType. Wir berücksichtigen somit nur Ale- und Stoudt-Biere. Für diese Teilmenge werden die Mittelwerte von Score, Alkoholgehalt (abv), Rank und Anzahl Ratings nach beerType berechnet und zusätzlich Boxplots für Score und Alkoholgehalt erstellt.
+
+Man sieht, dass Stoudt-Biere im Durchschnitt einen höheren Alkoholgehalt als Ales haben. Die Scores von Ales und Stouts liegen ähnlich hoch, Stouts tendenziell leicht höher. Beim Rank schneiden Stouts im Mittel etwas besser ab (niedrigerer Rang). Ales haben im Durchschnitt mehr Bewertungen als Stouts.
+
+Insgesamt gibt es leichte Unterschiede zugunsten der Stouts (stärker und etwas besser bewertet), aber keine extremen Abweichungen.
+
 # 7)
 ## Wie verhält sich das Ranking in Abhängigkeit vom Score und Alkoholgehalt? Ermitteln Sie, falls passend, den Korrelationskoeffizienten.
 
+Zwischen Rank und Score gibt es einen schlechten Zusammenhang (je höher der Score, desto besser bzw. niedriger der Rank), während der Alkoholgehalt fast keinen Einfluss auf das Ranking hat, was man in den Scatterplots gut sieht. Beim Score ist ein deutlicher Trend erkennbar, beim Alkoholgehalt sehen die Punkte eher zufällig verteilt aus.
+
+
 # 8)
 ## Untersuchen Sie den Score in Abhängigkeit der anderen Variablen. Welche Variablen haben Ihrer Meinung nach einen Einfluss?
+
+Der Score wird hauptsächlich durch die Bewertung selbst und somit indirekt durch das Ranking bestimmt. Einen leichten Einfluss haben auch die Anzahl der Ratings sowie der Bierstil. Der reine Alkoholgehalt spielt dagegen nur eine kleine Rolle.
