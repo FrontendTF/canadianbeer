@@ -68,13 +68,29 @@ Man sieht, dass Stoudt-Biere im Durchschnitt einen höheren Alkoholgehalt als Al
 
 Insgesamt gibt es leichte Unterschiede zugunsten der Stouts (stärker und etwas besser bewertet), aber keine extremen Abweichungen.
 
+Auswertungen Frage 6
+![Auswertung Frage 6](assets//imgs//ex6.png)<br>
+
+*Plots Auswertung Frage 6*
+![Plots - Frage 6](assets\plots\ex6-boxplot_alcohol_ale_stout.png)<br>
+![Plots - Frage 6](assets\plots\ex6-boxplot-score-ale-stout.png)<br>
+
 # 7)
 ## Wie verhält sich das Ranking in Abhängigkeit vom Score und Alkoholgehalt? Ermitteln Sie, falls passend, den Korrelationskoeffizienten.
 
 Zwischen Rank und Score gibt es einen schlechten Zusammenhang (je höher der Score, desto besser bzw. niedriger der Rank), während der Alkoholgehalt fast keinen Einfluss auf das Ranking hat, was man in den Scatterplots gut sieht. Beim Score ist ein deutlicher Trend erkennbar, beim Alkoholgehalt sehen die Punkte eher zufällig verteilt aus.
+
+*Plots Auswertung Frage 7*
+![Plots - Frage 7](assets\plots\ex7-scatterplot-rank-vs-abv.png)<br>
+![Plots - Frage 7](assets\plots\ex7-scatterplot-rank-vs-score.png)<br>
+![Plots - Frage 7](assets\plots\ex7-scatterplot-score-vs-abv.png)<br>
 
 
 # 8)
 ## Untersuchen Sie den Score in Abhängigkeit der anderen Variablen. Welche Variablen haben Ihrer Meinung nach einen Einfluss?
 
 Der Score wird hauptsächlich durch die Bewertung selbst und somit indirekt durch das Ranking bestimmt. Einen leichten Einfluss haben auch die Anzahl der Ratings sowie der Bierstil. Der reine Alkoholgehalt spielt dagegen nur eine kleine Rolle.
+
+*Plots Auswertung Frage 8*
+![Plots - Frage 8](assets\plots\ex8-boxplot-score_by_style_top5.png)<br>
+![Plots - Frage 8](assets\plots\ex8-scatterplot-score-vs-ratings.png)<br>

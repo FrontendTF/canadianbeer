@@ -34,6 +34,16 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+### Plots bei Ausführung des Codes anzeigen lassen
+
+Um Plots nach der Reihe automatisch anzuzeigen lassen müssen die:
+
+```python
+# plt.show()
+```
+
+Hashtags entfernt werden bei plt.show()
+
 ## Teammitglieder für Aufgabe 1
 
 - Thomas Feyerl MSD
