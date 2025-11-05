@@ -6,7 +6,7 @@
 
 Für dieses Projekt wird Python 3.12 verwendet.
 Die vorgegebenen Bibliotheken (requirements.txt Vorgaben von Müslüm Atlas) sind älter und stellen teils keine fertigen Wheels für Python 3.14 bereit.
-Mit Python 3.12 lassen sich alle Pakete direkt über pip installieren, ohne zusätzliche Tools wie conda oder spezielle Build Tools. Sollten Sie zusätzliche liabarys installieren wollen bitte über requirements.txt hinzufügen.
+Mit Python 3.12 lassen sich alle Pakete direkt über pip installieren, ohne zusätzliche Tools wie conda oder spezielle Build Tools. Sollten Sie zusätzliche libraries installieren wollen bitte über requirements.txt hinzufügen.
 
 ### Schritte
 
@@ -34,7 +34,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## Teammitglieder fuer Aufgabe 1
+## Teammitglieder für Aufgabe 1
 
 - Thomas Feyerl MSD
 - Markus Rossman MSD
