@@ -112,7 +112,7 @@ plt.close()
 print("Frage 5):")
 print("---")
 df["isAmericanStyle"] = df["style"].apply(lambda x: 1 if "American" in x else 0)
-print(df.groupby("isAmericanStyle")[["score", "rank"]].mean().round(2).value_counts())
+print(df.groupby("isAmericanStyle")[["score", "rank"]].mean().round(2))
 print("---")
 
 # PLOTS
