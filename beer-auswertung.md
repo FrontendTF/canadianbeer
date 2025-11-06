@@ -18,22 +18,22 @@
 # 3)
 ## Ermitteln Sie Kennzahlen für die einzelnen Beobachtungen, die Ihnen sinnvoll erscheinen. (Lokation, Modus, Varianzen, Quantile…)
 
-![Auswertung Frage 3 - Anzahl, Median, Standartabweichung, min-Wert, Quartile (25%, 50% 75%) und max-Wert](assets//imgs//ex3.png)<br>
+![Auswertung Frage 3 - Anzahl, Median, Standartabweichung, min-Wert, Quartile (25%, 50% 75%) und max-Wert](assets/imgs/ex3.png)<br>
 *Auswertung Frage 3 - Anzahl, Median, Standartabweichung, min-Wert, Quartile (25%, 50% 75%) und max-Wert. Darunter die jeweiligen Varianzen.*
 
-![Boxplot Frage 3](assets//plots/ex3-boxplot-score.png)<br>
+![Boxplot Frage 3](assets/plots/ex3-boxplot-score.png)<br>
 *Boxplot - Score von 100 Bieren*
 
-![Boxplot Frage 3](assets//plots/ex3-boxplot-abv.png)<br>
+![Boxplot Frage 3](assets/plots/ex3-boxplot-abv.png)<br>
 *Boxplot - Alkoholgehalt von 100 Bieren*
 
 # 4)
 ## Ermitteln Sie die 3 häufigsten Brauereien und Bier Arten, die in diesem Datensatz vorkommen. Wie verteilen sich Rang und Score auf diese Brauereien und Arten von Bier? Das Bier welcher Brauerei und welcher Art würden Sie jemandem empfehlen, wenn Sie sich nach dem Score richten? (Betrachten Sie hier nur die 3 häufigsten Arten)
 
-![Auswertung Frage 4](assets//imgs/ex4.png)<br>
+![Auswertung Frage 4](assets/imgs/ex4.png)<br>
 *Auswertung Frage 4 - zeigt brewery und style gruppiert, mit Median für score und rank*
 
-![Boxplot Frage 4](assets\plots\ex4-sub-boxplot-top3.png)<br>
+![Boxplot Frage 4](assets/plots/ex4-sub-boxplot-top3.png)<br>
 *Multiplot - Top 3 Rank und Score Auswertung nach Brauereien und Bierarten*
 
 
@@ -50,10 +50,10 @@ Wenn man die beiden "Score"-Plots betrachtet, ergibt sich eine eindeutige Empfeh
 # 5)
 ## Fügen Sie eine Variable ein, die anzeigt, ob es sich um ein american style beer handelt (Tipp: Variable style). Wie sehen score und rank in diesem Fall aus?
 
-![Auswertung Frage 5](assets//imgs//ex5.png)<br>
+![Auswertung Frage 5](assets/imgs/ex5.png)<br>
 *Auswertung Frage 5 - zeigt gruppiert, ob ein Bier "american style" ist, mit den Spalten score und rank*
 
-![Piechart - Frage 5](assets\plots\ex5-piechart-american-or-not.png)<br>
+![Piechart - Frage 5](assets/plots/ex5-piechart-american-or-not.png)<br>
 *Piechart - Verteilung American/Non-American (zeigt nur Verteilung - score und rank nicht einbezogen)*
 
 ### Analyse
@@ -69,11 +69,11 @@ Man sieht, dass Stoudt-Biere im Durchschnitt einen höheren Alkoholgehalt als Al
 Insgesamt gibt es leichte Unterschiede zugunsten der Stouts (stärker und etwas besser bewertet), aber keine extremen Abweichungen.
 
 Auswertungen Frage 6
-![Auswertung Frage 6](assets//imgs//ex6.png)<br>
+![Auswertung Frage 6](assets/imgs/ex6.png)<br>
 
 *Plots Auswertung Frage 6*
-![Plots - Frage 6](assets\plots\ex6-boxplot_alcohol_ale_stout.png)<br>
-![Plots - Frage 6](assets\plots\ex6-boxplot-score-ale-stout.png)<br>
+![Plots - Frage 6](assets/plots/ex6-boxplot_alcohol_ale_stout.png)<br>
+![Plots - Frage 6](assets/plots/ex6-boxplot-score-ale-stout.png)<br>
 
 # 7)
 ## Wie verhält sich das Ranking in Abhängigkeit vom Score und Alkoholgehalt? Ermitteln Sie, falls passend, den Korrelationskoeffizienten.
@@ -81,9 +81,9 @@ Auswertungen Frage 6
 Zwischen Rank und Score gibt es einen schlechten Zusammenhang (je höher der Score, desto besser bzw. niedriger der Rank), während der Alkoholgehalt fast keinen Einfluss auf das Ranking hat, was man in den Scatterplots gut sieht. Beim Score ist ein deutlicher Trend erkennbar, beim Alkoholgehalt sehen die Punkte eher zufällig verteilt aus.
 
 *Plots Auswertung Frage 7*
-![Plots - Frage 7](assets\plots\ex7-scatterplot-rank-vs-abv.png)<br>
-![Plots - Frage 7](assets\plots\ex7-scatterplot-rank-vs-score.png)<br>
-![Plots - Frage 7](assets\plots\ex7-scatterplot-score-vs-abv.png)<br>
+![Plots - Frage 7](assets/plots/ex7-scatterplot-rank-vs-abv.png)<br>
+![Plots - Frage 7](assets/plots/ex7-scatterplot-rank-vs-score.png)<br>
+![Plots - Frage 7](assets/plots/ex7-scatterplot-score-vs-abv.png)<br>
 
 
 # 8)
@@ -92,5 +92,5 @@ Zwischen Rank und Score gibt es einen schlechten Zusammenhang (je höher der Sco
 Der Score wird hauptsächlich durch die Bewertung selbst und somit indirekt durch das Ranking bestimmt. Einen leichten Einfluss haben auch die Anzahl der Ratings sowie der Bierstil. Der reine Alkoholgehalt spielt dagegen nur eine kleine Rolle.
 
 *Plots Auswertung Frage 8*
-![Plots - Frage 8](assets\plots\ex8-boxplot-score_by_style_top5.png)<br>
-![Plots - Frage 8](assets\plots\ex8-scatterplot-score-vs-ratings.png)<br>
+![Plots - Frage 8](assets/plots/ex8-boxplot-score_by_style_top5.png)<br>
+![Plots - Frage 8](assets/plots/ex8-scatterplot-score-vs-ratings.png)<br>
